@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tablecell" rowHeight="180" id="KGk-i7-Jjw" customClass="CellTable" customModule="SwiftyCampTaskDay_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="179.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPk-Or-s2x">
+                        <rect key="frame" x="2" y="15" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ms-2i-9Ii">
+                        <rect key="frame" x="352" y="15" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6R-1g-uyj">
+                        <rect key="frame" x="2" y="45.5" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cqb-4W-GeJ">
+                        <rect key="frame" x="5" y="82.5" width="409" height="92"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLC-Vr-Q3d" customClass="AnimatableLabel" customModule="IBAnimatable">
+                                <rect key="frame" x="0.0" y="0.0" width="102.5" height="92"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.47058823529999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeinside" translatesAutoresizingMaskIntoConstraints="NO" id="2r5-Oc-7Ik" customClass="AnimatableImageView" customModule="IBAnimatable">
+                                <rect key="frame" x="102.5" y="0.0" width="102" height="92"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeinside" translatesAutoresizingMaskIntoConstraints="NO" id="h1G-91-b52" customClass="AnimatableImageView" customModule="IBAnimatable">
+                                <rect key="frame" x="204.5" y="0.0" width="102.5" height="92"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeinside" translatesAutoresizingMaskIntoConstraints="NO" id="sbf-YA-edy" customClass="AnimatableImageView" customModule="IBAnimatable">
+                                <rect key="frame" x="307" y="0.0" width="102" height="92"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="bLC-Vr-Q3d" firstAttribute="height" secondItem="2r5-Oc-7Ik" secondAttribute="height" id="533-CB-MBq"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="cqb-4W-GeJ" secondAttribute="bottom" constant="5" id="3OE-x7-eOn"/>
+                    <constraint firstItem="ZPk-Or-s2x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="57j-dR-Rf8"/>
+                    <constraint firstItem="q6R-1g-uyj" firstAttribute="top" secondItem="ZPk-Or-s2x" secondAttribute="bottom" constant="10" id="7Tg-eo-MI9"/>
+                    <constraint firstItem="ZPk-Or-s2x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="B8q-Mv-1en"/>
+                    <constraint firstItem="q6R-1g-uyj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="CFY-Bw-rxh"/>
+                    <constraint firstItem="4ms-2i-9Ii" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Sth-xO-mzP"/>
+                    <constraint firstAttribute="trailing" secondItem="4ms-2i-9Ii" secondAttribute="trailing" constant="20" id="Xr5-Y5-hqP"/>
+                    <constraint firstItem="cqb-4W-GeJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="fAG-pp-nC2"/>
+                    <constraint firstAttribute="trailing" secondItem="cqb-4W-GeJ" secondAttribute="trailing" id="gOy-g7-eVZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="adressLbl" destination="q6R-1g-uyj" id="UvP-qQ-IVO"/>
+                <outlet property="bedsCountLbl" destination="bLC-Vr-Q3d" id="Amy-SO-NdR"/>
+                <outlet property="firstImage" destination="2r5-Oc-7Ik" id="FVH-oD-Ncs"/>
+                <outlet property="nameLbl" destination="ZPk-Or-s2x" id="Zgd-q5-P3e"/>
+                <outlet property="priceLbl" destination="4ms-2i-9Ii" id="alo-Yc-cSk"/>
+                <outlet property="secondImage" destination="h1G-91-b52" id="zd5-A1-ydY"/>
+                <outlet property="thirdImage" destination="sbf-YA-edy" id="u54-lF-swQ"/>
+            </connections>
+            <point key="canvasLocation" x="197.10144927536234" y="158.03571428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="homeinside" width="74" height="92"/>
+    </resources>
+</document>
