@@ -30,9 +30,23 @@ class LoginVC: UIViewController {
         guard email.isEmail == true else {return showAlert(msgerror: "enter a valid mail")}
         guard let password = PasswordTxtField.text , PasswordTxtField.text != "" else { showAlert(); return}
         guard password.isValidPassword == true else {return showAlert(msgerror: "enter a valid password")}
-        let st = UIStoryboard(name: "Main", bundle: nil)
-        let vc = st.instantiateViewController(withIdentifier: "HomeScreen")
-        navigationController?.pushViewController(vc, animated: true)
+        
+        AuthService.instance.login(email: email, password: password) { (error : Error?, success : Bool , errormsg : String) in
+            if success {
+                
+                if errormsg != ""{
+                    self.showAlert(msgerror: errormsg)
+                    print("dd")
+                }else {
+                    let st = UIStoryboard(name: "Main", bundle: nil)
+                    let vc = st.instantiateViewController(withIdentifier: "HomeScreen")
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+            } else {
+                self.showAlert(msgerror: "connection faild unable to signup try again")
+                print("connection faild unaple to signup")
+            }
+        }
         
     }
     @IBAction func GoogleBtnWasPressed(_ sender: Any) {
@@ -45,6 +59,9 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func CreateBtnWasPressed(_ sender: Any) {
+        let st = UIStoryboard(name: "Main", bundle: nil)
+        let vc = st.instantiateViewController(withIdentifier: "RegisterationScreen")
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 

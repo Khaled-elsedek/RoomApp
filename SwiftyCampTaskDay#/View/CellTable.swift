@@ -22,8 +22,13 @@ class CellTable: UITableViewCell {
     
     
     
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        
         
         
     }

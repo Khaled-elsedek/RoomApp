@@ -1,16 +1,28 @@
 PODS:
+  - Alamofire (4.8.2)
   - IBAnimatable (6.0.0)
+  - Kingfisher (5.7.0)
+  - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
+  - Alamofire
   - IBAnimatable
+  - Kingfisher
+  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - IBAnimatable
+    - Kingfisher
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   IBAnimatable: d49f9fee0c401b5b08d31b77256b77fb067e0e92
+  Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: ed589e93f6300061f95f1e2359ec929e121edca8
+PODFILE CHECKSUM: 153b86394772a14356f3b99ac59ba722f8e6a858
 
 COCOAPODS: 1.5.2

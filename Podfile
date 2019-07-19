@@ -9,5 +9,8 @@ target 'SwiftyCampTaskDay#' do
 
   # Pods for SwiftyCampTaskDay#
   pod 'IBAnimatable'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'Kingfisher'
 
 end

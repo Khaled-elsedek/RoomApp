@@ -7,31 +7,42 @@
 //
 
 import UIKit
+import Kingfisher
 
-class HomeVC: UIViewController {
+class HomeVC: UIViewController , UITableViewDelegate , UITableViewDataSource{
+    
+    
+    public var roomsData: [RoomsDataModel] = []
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        AdsAPI()
 
         let projectcell = UINib(nibName: "CellTable", bundle: nil )
         tableView.register(projectcell, forCellReuseIdentifier: "tablecell")    }
-    
-
-    
-
-}
-extension UIViewController : UITableViewDelegate{
-    
-}
-extension UIViewController : UITableViewDataSource {
+    func AdsAPI(){
+        MainAds.instance.main { (error, sucess, data) in
+            if sucess {
+                if let data = data {
+                    self.roomsData = data
+                    self.tableView.reloadData()
+                }
+            }
+        }
+    }
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
+        return roomsData.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:CellTable = tableView.dequeueReusableCell(withIdentifier:"tablecell" , for: indexPath) as! CellTable
+        let roomsImage = roomsData[indexPath.item].image
+        cell.firstImage.kf.setImage(with: roomsImage)
+        cell.nameLbl.text = roomsData[indexPath.item].place
+        cell.priceLbl.text = roomsData[indexPath.item].price
+        cell.adressLbl.text = roomsData[indexPath.item].description
+        cell.bedsCountLbl.text = String(roomsData[indexPath.item].id)
         
         return cell
     }
@@ -51,6 +62,8 @@ extension UIViewController : UITableViewDataSource {
         
         
     }
+
     
-    
+
 }
+
