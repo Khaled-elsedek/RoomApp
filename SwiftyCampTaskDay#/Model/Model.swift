@@ -9,10 +9,21 @@
 import Foundation
 
 struct RoomsDataModel {
-    let id:Int
-    let title : String
-    let price: String
-    let place: String
-    let image : URL
-    let description : String
+    var id:Int?
+    var title : String?
+    var price: String?
+    var place: String?
+    var image : String?
+    var description : String?
+    init(id:Int ,title:String,price:String,place:String,image:String, description:String) {
+        self.id = id
+        self.title = title
+        self.price = price
+        self.place = place
+        self.image = image
+        self.description = description
+    }
+    init(){}
 }
+
+

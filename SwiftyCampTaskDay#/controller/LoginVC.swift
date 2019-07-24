@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class LoginVC: UIViewController {
     
@@ -16,7 +17,7 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
     }
     func showAlert(msgerror:String = "complete all fields"){
@@ -30,19 +31,22 @@ class LoginVC: UIViewController {
         guard email.isEmail == true else {return showAlert(msgerror: "enter a valid mail")}
         guard let password = PasswordTxtField.text , PasswordTxtField.text != "" else { showAlert(); return}
         guard password.isValidPassword == true else {return showAlert(msgerror: "enter a valid password")}
-        
+        SVProgressHUD.show()
         AuthService.instance.login(email: email, password: password) { (error : Error?, success : Bool , errormsg : String) in
             if success {
                 
                 if errormsg != ""{
                     self.showAlert(msgerror: errormsg)
+                    SVProgressHUD.dismiss()
                     print("dd")
                 }else {
+                    SVProgressHUD.dismiss()
                     let st = UIStoryboard(name: "Main", bundle: nil)
                     let vc = st.instantiateViewController(withIdentifier: "HomeScreen")
                     self.navigationController?.pushViewController(vc, animated: true)
                 }
             } else {
+                SVProgressHUD.dismiss()
                 self.showAlert(msgerror: "connection faild unable to signup try again")
                 print("connection faild unaple to signup")
             }
@@ -64,5 +68,5 @@ class LoginVC: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
-
+    
 }

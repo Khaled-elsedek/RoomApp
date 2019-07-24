@@ -15,13 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+         //Override point for customization after application launch.
         
         if let api_token = Helper.getApiToken() {
-            
-            let tab = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeScreen")
-            window?.rootViewController = tab
-            
+            let homeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeScreen")
+            let navController = UINavigationController(rootViewController: homeViewController)
+            window?.rootViewController = navController
+        
         }
         
         return true

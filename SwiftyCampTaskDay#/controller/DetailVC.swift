@@ -9,6 +9,7 @@
 import UIKit
 
 class DetailVC: UIViewController {
+    var name = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,14 +18,9 @@ class DetailVC: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func AddRoomBtnWasPRessed(_ sender: Any) {
+        let st = UIStoryboard(name: "Main", bundle: nil)
+        let vc = st.instantiateViewController(withIdentifier: "AddRoom")
+        self.navigationController?.pushViewController(vc, animated: true)
     }
-    */
-
 }

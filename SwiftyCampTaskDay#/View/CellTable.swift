@@ -21,22 +21,15 @@ class CellTable: UITableViewCell {
     
     
     
-    
-    
-    
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        
-        
-        
+    var item:RoomsDataModel!{
+        didSet{
+            self.nameLbl.text  = item.place
+            self.priceLbl.text = item.price
+            adressLbl.text     = item.description
+        }
     }
-
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//        // Configure the view for the selected state
-//    }
     
+    
+    
+
 }

@@ -20,6 +20,8 @@
 		29420B4F22D800E000138694 /*  Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29420B4E22D800E000138694 /*  Validation.swift */; };
 		29420B5522D8049600138694 /* CellTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29420B5322D8049600138694 /* CellTable.swift */; };
 		29420B5622D8049600138694 /* CellTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29420B5422D8049600138694 /* CellTable.xib */; };
+		295CF0BB22E2C60200284A5D /* AddRoomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295CF0BA22E2C60200284A5D /* AddRoomVC.swift */; };
+		295CF0BD22E2C8EC00284A5D /* AddRoomAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295CF0BC22E2C8EC00284A5D /* AddRoomAPI.swift */; };
 		29A6ED9422D60C6D00A483A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A6ED9322D60C6D00A483A1 /* AppDelegate.swift */; };
 		29A6ED9922D60C6D00A483A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A6ED9722D60C6D00A483A1 /* Main.storyboard */; };
 		29A6ED9B22D60C6E00A483A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A6ED9A22D60C6E00A483A1 /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 		29420B4E22D800E000138694 /*  Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " Validation.swift"; sourceTree = "<group>"; };
 		29420B5322D8049600138694 /* CellTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTable.swift; sourceTree = "<group>"; };
 		29420B5422D8049600138694 /* CellTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellTable.xib; sourceTree = "<group>"; };
+		295CF0BA22E2C60200284A5D /* AddRoomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomVC.swift; sourceTree = "<group>"; };
+		295CF0BC22E2C8EC00284A5D /* AddRoomAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomAPI.swift; sourceTree = "<group>"; };
 		29A6ED9022D60C6D00A483A1 /* SwiftyCampTaskDay#.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftyCampTaskDay#.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A6ED9322D60C6D00A483A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29A6ED9822D60C6D00A483A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 				29054D8622E24C6D007FB4F2 /* URLS.swift */,
 				29054D8822E24CC4007FB4F2 /* AuthClass.swift */,
 				29054D8F22E256CF007FB4F2 /* RoomsApi.swift */,
+				295CF0BC22E2C8EC00284A5D /* AddRoomAPI.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -97,6 +102,7 @@
 				29420B4822D7F96100138694 /* LoginVC.swift */,
 				29054D8322E248A8007FB4F2 /* RegestrationVC.swift */,
 				29420B4A22D7F97200138694 /* HomeVC.swift */,
+				295CF0BA22E2C60200284A5D /* AddRoomVC.swift */,
 				29420B4C22D7F97E00138694 /* DetailVC.swift */,
 			);
 			path = controller;
@@ -262,6 +268,10 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -269,6 +279,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +299,7 @@
 			files = (
 				29054D9022E256CF007FB4F2 /* RoomsApi.swift in Sources */,
 				29054D8B22E24E7C007FB4F2 /* Helper.swift in Sources */,
+				295CF0BD22E2C8EC00284A5D /* AddRoomAPI.swift in Sources */,
 				29420B4D22D7F97E00138694 /* DetailVC.swift in Sources */,
 				29054D8722E24C6D007FB4F2 /* URLS.swift in Sources */,
 				29054D8E22E25600007FB4F2 /* Model.swift in Sources */,
@@ -296,6 +311,7 @@
 				29420B4922D7F96100138694 /* LoginVC.swift in Sources */,
 				29420B4F22D800E000138694 /*  Validation.swift in Sources */,
 				29054D8422E248A8007FB4F2 /* RegestrationVC.swift in Sources */,
+				295CF0BB22E2C60200284A5D /* AddRoomVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

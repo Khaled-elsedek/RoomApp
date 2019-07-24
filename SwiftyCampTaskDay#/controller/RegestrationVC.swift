@@ -8,6 +8,7 @@
 
 import UIKit
 import IBAnimatable
+import SVProgressHUD
 
 class RegestrationVC: UIViewController {
 
@@ -35,13 +36,16 @@ class RegestrationVC: UIViewController {
         guard let password = passwordTextField.text , passwordTextField.text != "" else {return showAlert()}
         guard password.isValidPassword == true else {return showAlert(msgerror: "enter a valid password")}
         guard let name = nameTextField.text , nameTextField.text != "" else {return showAlert()}
+        SVProgressHUD.show()
         AuthService.instance.registerUSer(email: email, password: password, name: name) { (error, success, errormsg) in
+            
             if success {
                 print("dd")
                 
                 if errormsg != "Account created successfully"{
                     self.showAlert(msgerror: errormsg)
                 }else {
+                    SVProgressHUD.dismiss()
                     let st = UIStoryboard(name: "Main", bundle: nil)
                     let vc = st.instantiateViewController(withIdentifier: "HomeScreen")
                     self.navigationController?.pushViewController(vc, animated: true)
