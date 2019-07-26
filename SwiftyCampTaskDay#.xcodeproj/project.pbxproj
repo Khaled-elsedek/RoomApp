@@ -26,6 +26,7 @@
 		29A6ED9922D60C6D00A483A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A6ED9722D60C6D00A483A1 /* Main.storyboard */; };
 		29A6ED9B22D60C6E00A483A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A6ED9A22D60C6E00A483A1 /* Assets.xcassets */; };
 		29A6ED9E22D60C6E00A483A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A6ED9C22D60C6E00A483A1 /* LaunchScreen.storyboard */; };
+		29F5AF9922EB2F1400D0148B /* RoomLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F5AF9822EB2F1400D0148B /* RoomLocationVC.swift */; };
 		4CBE0EB294F42C35D3975EAD /* Pods_SwiftyCampTaskDay_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E07B2143BC1A7F1902AE2B6 /* Pods_SwiftyCampTaskDay_.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		29A6ED9A22D60C6E00A483A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29A6ED9D22D60C6E00A483A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29A6ED9F22D60C6E00A483A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29F5AF9822EB2F1400D0148B /* RoomLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomLocationVC.swift; sourceTree = "<group>"; };
 		92521800A4D0E1A7AFBED40C /* Pods-SwiftyCampTaskDay#.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyCampTaskDay#.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyCampTaskDay#/Pods-SwiftyCampTaskDay#.debug.xcconfig"; sourceTree = "<group>"; };
 		9D0DAA4C9A84C31986B8E479 /* Pods-SwiftyCampTaskDay#.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyCampTaskDay#.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyCampTaskDay#/Pods-SwiftyCampTaskDay#.release.xcconfig"; sourceTree = "<group>"; };
 		9E07B2143BC1A7F1902AE2B6 /* Pods_SwiftyCampTaskDay_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyCampTaskDay_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +106,7 @@
 				29420B4A22D7F97200138694 /* HomeVC.swift */,
 				295CF0BA22E2C60200284A5D /* AddRoomVC.swift */,
 				29420B4C22D7F97E00138694 /* DetailVC.swift */,
+				29F5AF9822EB2F1400D0148B /* RoomLocationVC.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				29420B4922D7F96100138694 /* LoginVC.swift in Sources */,
 				29420B4F22D800E000138694 /*  Validation.swift in Sources */,
 				29054D8422E248A8007FB4F2 /* RegestrationVC.swift in Sources */,
+				29F5AF9922EB2F1400D0148B /* RoomLocationVC.swift in Sources */,
 				295CF0BB22E2C60200284A5D /* AddRoomVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

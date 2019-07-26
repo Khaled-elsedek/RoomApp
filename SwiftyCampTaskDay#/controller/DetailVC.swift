@@ -23,4 +23,11 @@ class DetailVC: UIViewController {
         let vc = st.instantiateViewController(withIdentifier: "AddRoom")
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @IBAction func roomLocationBtnWasPressed(_ sender: Any) {
+        let st = UIStoryboard(name: "Main", bundle: nil)
+        let vc = st.instantiateViewController(withIdentifier: "roomLocation")
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }

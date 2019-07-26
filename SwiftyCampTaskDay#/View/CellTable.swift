@@ -18,9 +18,6 @@ class CellTable: UITableViewCell {
     @IBOutlet weak var firstImage: AnimatableImageView!
     @IBOutlet weak var secondImage: AnimatableImageView!
     @IBOutlet weak var thirdImage: AnimatableImageView!
-    
-    
-    
     var item:RoomsDataModel!{
         didSet{
             self.nameLbl.text  = item.place

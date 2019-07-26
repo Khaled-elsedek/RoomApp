@@ -433,7 +433,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4yn-T5-HcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3437.68115942029" y="18.75"/>
+            <point key="canvasLocation" x="2564" y="19"/>
         </scene>
         <!--Add RoomVC-->
         <scene sceneID="K2y-i1-D2G">
@@ -574,6 +574,21 @@
             </objects>
             <point key="canvasLocation" x="2531.8840579710145" y="825.81521739130437"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="VpT-ck-Vfr">
+            <objects>
+                <viewController storyboardIdentifier="roomLocation" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c1R-0b-ZH8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i5n-Up-7BI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="x0s-7J-aEy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zi6-9Z-Icp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3387" y="827"/>
+        </scene>
         <!--DetailVC-->
         <scene sceneID="jc0-Dy-2Jb">
             <objects>
@@ -591,7 +606,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9fU-av-wAh"/>
                                 </constraints>
-                                <state key="normal" title="Request Information">
+                                <state key="normal" title="add a new room">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -604,21 +619,44 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Yjp-Hg-W7T">
-                                <rect key="frame" x="0.0" y="382" width="414" height="264"/>
+                                <rect key="frame" x="0.0" y="382" width="414" height="194"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcu-RZ-O86" customClass="AnimatableButton" customModule="IBAnimatable">
+                                <rect key="frame" x="100" y="596" width="214" height="50"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.3803921569" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ca8-ps-UUF"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="uqu-ZZ-qci"/>
+                                </constraints>
+                                <state key="normal" title="get the room location">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="AddRoomBtnWasPRessed:" destination="J8a-gE-RXT" eventType="touchUpInside" id="QhF-k5-LQH"/>
+                                    <action selector="roomLocationBtnWasPressed:" destination="J8a-gE-RXT" eventType="touchUpInside" id="oJq-hd-NjL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6tc-v3-3t7" firstAttribute="top" secondItem="Yjp-Hg-W7T" secondAttribute="bottom" constant="20" id="2vJ-tE-fdL"/>
+                            <constraint firstItem="hcu-RZ-O86" firstAttribute="top" secondItem="Yjp-Hg-W7T" secondAttribute="bottom" constant="20" id="3pP-bv-EdC"/>
                             <constraint firstItem="y4m-X4-fWD" firstAttribute="trailing" secondItem="tvN-HB-wWW" secondAttribute="trailing" id="BN6-oa-Z2M"/>
                             <constraint firstItem="tvN-HB-wWW" firstAttribute="trailing" secondItem="6tc-v3-3t7" secondAttribute="trailing" constant="100" id="D6S-GP-FOm"/>
                             <constraint firstItem="Yjp-Hg-W7T" firstAttribute="top" secondItem="y4m-X4-fWD" secondAttribute="bottom" id="Mbx-9e-F1m"/>
                             <constraint firstItem="Yjp-Hg-W7T" firstAttribute="trailing" secondItem="tvN-HB-wWW" secondAttribute="trailing" id="ONA-bS-OGo"/>
+                            <constraint firstItem="hcu-RZ-O86" firstAttribute="leading" secondItem="tvN-HB-wWW" secondAttribute="leading" constant="100" id="VRX-Vw-asV"/>
                             <constraint firstItem="Yjp-Hg-W7T" firstAttribute="leading" secondItem="tvN-HB-wWW" secondAttribute="leading" id="hE0-1z-sit"/>
+                            <constraint firstItem="6tc-v3-3t7" firstAttribute="top" secondItem="hcu-RZ-O86" secondAttribute="bottom" constant="20" id="ojd-yc-rGS"/>
+                            <constraint firstItem="tvN-HB-wWW" firstAttribute="trailing" secondItem="hcu-RZ-O86" secondAttribute="trailing" constant="100" id="tsC-Me-rjw"/>
                             <constraint firstItem="y4m-X4-fWD" firstAttribute="top" secondItem="g3C-LL-X9J" secondAttribute="top" id="tun-bs-iJB"/>
                             <constraint firstItem="6tc-v3-3t7" firstAttribute="leading" secondItem="tvN-HB-wWW" secondAttribute="leading" constant="100" id="umi-JH-wP4"/>
                             <constraint firstItem="y4m-X4-fWD" firstAttribute="leading" secondItem="tvN-HB-wWW" secondAttribute="leading" id="xFT-se-MGN"/>
@@ -629,7 +667,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XeW-pw-gAU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4255.072463768116" y="18.75"/>
+            <point key="canvasLocation" x="3386.9565217391305" y="18.75"/>
         </scene>
         <!--Animatable Navigation Controller-->
         <scene sceneID="e9I-HT-Nc9">

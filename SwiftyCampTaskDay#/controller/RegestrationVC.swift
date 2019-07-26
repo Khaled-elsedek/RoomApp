@@ -58,11 +58,6 @@ class RegestrationVC: UIViewController {
             }
         }
         
-        
-        
-        
-        
-        
             }
     
     
