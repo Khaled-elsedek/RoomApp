@@ -14,5 +14,7 @@ target 'SwiftyCampTaskDay#' do
   pod 'Kingfisher'
   pod 'SVProgressHUD'
   pod 'NVActivityIndicatorView'
+  pod 'Realm'
+  pod 'RealmSwift'
 
 end

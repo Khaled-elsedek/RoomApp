@@ -18,11 +18,11 @@ class CellTable: UITableViewCell {
     @IBOutlet weak var firstImage: AnimatableImageView!
     @IBOutlet weak var secondImage: AnimatableImageView!
     @IBOutlet weak var thirdImage: AnimatableImageView!
-    var item:RoomsDataModel!{
+    var item:Room!{
         didSet{
-            self.nameLbl.text  = item.place
+            self.nameLbl.text  = item.adress
             self.priceLbl.text = item.price
-            adressLbl.text     = item.description
+            self.adressLbl.text = item.stateAdress
         }
     }
     

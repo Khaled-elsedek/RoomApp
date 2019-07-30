@@ -7,11 +7,10 @@
 //
 
 import Foundation
-
-typealias completionHandler = (_ Success : Bool, _ err: String)->()
-
-let BASEURL = "https://roomy-application.herokuapp.com/"
-let URLREGISTER = BASEURL + "signup"
-let URLLOGIN = BASEURL + "auth/login"
-let ROOMS = BASEURL + "rooms"
-let ADDROOM = "https://roomy-application.herokuapp.com/rooms"
+struct URLS{
+    static let baseURL:String = "https://roomy-application.herokuapp.com/"
+    static let loginURL:String = baseURL + "auth/login"
+    static let registerURL:String = baseURL + "signup"
+    static let roomsURL:String = baseURL + "rooms"
+    
+}

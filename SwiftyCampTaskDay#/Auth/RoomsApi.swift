@@ -8,37 +8,33 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
-class MainAds {
-    static let instance = MainAds()
-    func main(completion : @escaping (_ error:Error?,_ sucess:Bool, _ errormessage:String,_ modelArray:[RoomsDataModel]?)->Void){
-        if let api_token = Helper.getApiToken(){
-        let header:[String:Any]=["Authorization" : "\(api_token)"]
-        Alamofire.request(ROOMS,method:.get,parameters:nil,encoding:JSONEncoding.default,headers:(header as! HTTPHeaders)).responseJSON{(response)in
+
+class FetchRooms : NSObject {
+    class func getRoomsInBackend ( completion: @escaping (Error?,[Room]?) -> Void ) {
+        guard let tokens = UserDefaults.standard.object(forKey: "auth_token") as? String else {
+            completion(nil,nil)
+            return
+        }
+        Alamofire.request(NetworkRoute.getRooms) .validate() .responseJSON { response in
             switch response.result {
-            case .success(let data):
-                let json = JSON(data)
-                if let errormessage = json["message"].string{
-                if errormessage != "" {
-                    completion(nil , true , errormessage,nil)
-                    print(errormessage)
-                    }}
-                guard let data = json.array else { return }
-                var modelArray = [RoomsDataModel]()
-                for obj in data {
-                    var khaled = RoomsDataModel()
-                    khaled.id = obj["id"].int
-                    khaled.title = obj["title"].string
-                    khaled.price = obj["price"].string
-                    khaled.place = obj["place"].string
-                    khaled.image = obj["image"].string
-                    khaled.description = obj["description"].string
-                    modelArray.append(khaled)}
-                completion(nil, true,"", modelArray)
-                print(modelArray.count)
             case .failure(let error):
                 print(error)
+            case .success(let value):
+                guard let rooms = Parser.parseRooms(from: JSON(value).array!) else {
+                    completion(nil,nil)
+                    return
+                }
+                completion(nil,rooms)
             }
         }
     }
-}
+    
+    class func getRoomsInDB( completion : @escaping (Error?,[Room]?) -> Void ){
+        let offlineRooms = roomsOFFline()
+        let dbRooms = offlineRooms.readAllRooms()
+        let parsRooms = Parser.parseRooms(from: JSON(dbRooms).array!)
+        completion(nil,parsRooms)
+    }
+    
+    
 }

@@ -26,6 +26,11 @@
 		29A6ED9922D60C6D00A483A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A6ED9722D60C6D00A483A1 /* Main.storyboard */; };
 		29A6ED9B22D60C6E00A483A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A6ED9A22D60C6E00A483A1 /* Assets.xcassets */; };
 		29A6ED9E22D60C6E00A483A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A6ED9C22D60C6E00A483A1 /* LaunchScreen.storyboard */; };
+		29ECAF3522F0994100FF5E58 /* NetworkRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ECAF3422F0994100FF5E58 /* NetworkRoute.swift */; };
+		29ECAF3722F099A500FF5E58 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ECAF3622F099A500FF5E58 /* Room.swift */; };
+		29ECAF3922F09A4200FF5E58 /* isConnected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ECAF3822F09A4200FF5E58 /* isConnected.swift */; };
+		29ECAF3B22F09CA600FF5E58 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ECAF3A22F09CA600FF5E58 /* JSONParser.swift */; };
+		29ECAF3E22F09D9500FF5E58 /* RealmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ECAF3D22F09D9500FF5E58 /* RealmDB.swift */; };
 		29F5AF9922EB2F1400D0148B /* RoomLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F5AF9822EB2F1400D0148B /* RoomLocationVC.swift */; };
 		4CBE0EB294F42C35D3975EAD /* Pods_SwiftyCampTaskDay_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E07B2143BC1A7F1902AE2B6 /* Pods_SwiftyCampTaskDay_.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +57,11 @@
 		29A6ED9A22D60C6E00A483A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29A6ED9D22D60C6E00A483A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29A6ED9F22D60C6E00A483A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29ECAF3422F0994100FF5E58 /* NetworkRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRoute.swift; sourceTree = "<group>"; };
+		29ECAF3622F099A500FF5E58 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		29ECAF3822F09A4200FF5E58 /* isConnected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isConnected.swift; sourceTree = "<group>"; };
+		29ECAF3A22F09CA600FF5E58 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		29ECAF3D22F09D9500FF5E58 /* RealmDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDB.swift; sourceTree = "<group>"; };
 		29F5AF9822EB2F1400D0148B /* RoomLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomLocationVC.swift; sourceTree = "<group>"; };
 		92521800A4D0E1A7AFBED40C /* Pods-SwiftyCampTaskDay#.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyCampTaskDay#.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyCampTaskDay#/Pods-SwiftyCampTaskDay#.debug.xcconfig"; sourceTree = "<group>"; };
 		9D0DAA4C9A84C31986B8E479 /* Pods-SwiftyCampTaskDay#.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyCampTaskDay#.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyCampTaskDay#/Pods-SwiftyCampTaskDay#.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +95,9 @@
 				29054D8822E24CC4007FB4F2 /* AuthClass.swift */,
 				29054D8F22E256CF007FB4F2 /* RoomsApi.swift */,
 				295CF0BC22E2C8EC00284A5D /* AddRoomAPI.swift */,
+				29ECAF3422F0994100FF5E58 /* NetworkRoute.swift */,
+				29ECAF3822F09A4200FF5E58 /* isConnected.swift */,
+				29ECAF3A22F09CA600FF5E58 /* JSONParser.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -125,6 +138,7 @@
 			children = (
 				29420B4E22D800E000138694 /*  Validation.swift */,
 				29054D8A22E24E7C007FB4F2 /* Helper.swift */,
+				29ECAF3622F099A500FF5E58 /* Room.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -150,6 +164,7 @@
 		29A6ED9222D60C6D00A483A1 /* SwiftyCampTaskDay# */ = {
 			isa = PBXGroup;
 			children = (
+				29ECAF3C22F09D7C00FF5E58 /* RealmDB */,
 				29054D8C22E255DD007FB4F2 /* Model */,
 				29054D8522E24C5C007FB4F2 /* Auth */,
 				29420B5022D800EE00138694 /* Extensions */,
@@ -162,6 +177,14 @@
 				29A6ED9F22D60C6E00A483A1 /* Info.plist */,
 			);
 			path = "SwiftyCampTaskDay#";
+			sourceTree = "<group>";
+		};
+		29ECAF3C22F09D7C00FF5E58 /* RealmDB */ = {
+			isa = PBXGroup;
+			children = (
+				29ECAF3D22F09D9500FF5E58 /* RealmDB.swift */,
+			);
+			path = RealmDB;
 			sourceTree = "<group>";
 		};
 		CECEF1D740E3507DFBAA8E8B /* Pods */ = {
@@ -272,6 +295,8 @@
 				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -281,6 +306,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -296,19 +323,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29ECAF3922F09A4200FF5E58 /* isConnected.swift in Sources */,
 				29054D9022E256CF007FB4F2 /* RoomsApi.swift in Sources */,
 				29054D8B22E24E7C007FB4F2 /* Helper.swift in Sources */,
+				29ECAF3522F0994100FF5E58 /* NetworkRoute.swift in Sources */,
 				295CF0BD22E2C8EC00284A5D /* AddRoomAPI.swift in Sources */,
 				29420B4D22D7F97E00138694 /* DetailVC.swift in Sources */,
+				29ECAF3B22F09CA600FF5E58 /* JSONParser.swift in Sources */,
 				29054D8722E24C6D007FB4F2 /* URLS.swift in Sources */,
 				29054D8E22E25600007FB4F2 /* Model.swift in Sources */,
 				29A6ED9422D60C6D00A483A1 /* AppDelegate.swift in Sources */,
+				29ECAF3E22F09D9500FF5E58 /* RealmDB.swift in Sources */,
 				29420B4B22D7F97200138694 /* HomeVC.swift in Sources */,
 				29420B5522D8049600138694 /* CellTable.swift in Sources */,
 				29420B4722D7F94F00138694 /* WelcomVC.swift in Sources */,
 				29054D8922E24CC4007FB4F2 /* AuthClass.swift in Sources */,
 				29420B4922D7F96100138694 /* LoginVC.swift in Sources */,
 				29420B4F22D800E000138694 /*  Validation.swift in Sources */,
+				29ECAF3722F099A500FF5E58 /* Room.swift in Sources */,
 				29054D8422E248A8007FB4F2 /* RegestrationVC.swift in Sources */,
 				29F5AF9922EB2F1400D0148B /* RoomLocationVC.swift in Sources */,
 				295CF0BB22E2C60200284A5D /* AddRoomVC.swift in Sources */,

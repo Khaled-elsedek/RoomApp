@@ -37,8 +37,7 @@ class RegestrationVC: UIViewController {
         guard password.isValidPassword == true else {return showAlert(msgerror: "enter a valid password")}
         guard let name = nameTextField.text , nameTextField.text != "" else {return showAlert()}
         SVProgressHUD.show()
-        AuthService.instance.registerUSer(email: email, password: password, name: name) { (error, success, errormsg) in
-            
+        NetworkCall.signUp(name: name, email: email, password: password) { (error, success, errormsg) in
             if success {
                 print("dd")
                 

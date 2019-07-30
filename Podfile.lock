@@ -5,6 +5,11 @@ PODS:
   - NVActivityIndicatorView (4.7.0):
     - NVActivityIndicatorView/Presenter (= 4.7.0)
   - NVActivityIndicatorView/Presenter (4.7.0)
+  - Realm (3.17.1):
+    - Realm/Headers (= 3.17.1)
+  - Realm/Headers (3.17.1)
+  - RealmSwift (3.17.1):
+    - Realm (= 3.17.1)
   - SVProgressHUD (2.2.5)
   - SwiftyJSON (5.0.0)
 
@@ -13,6 +18,8 @@ DEPENDENCIES:
   - IBAnimatable
   - Kingfisher
   - NVActivityIndicatorView
+  - Realm
+  - RealmSwift
   - SVProgressHUD
   - SwiftyJSON
 
@@ -22,6 +29,8 @@ SPEC REPOS:
     - IBAnimatable
     - Kingfisher
     - NVActivityIndicatorView
+    - Realm
+    - RealmSwift
     - SVProgressHUD
     - SwiftyJSON
 
@@ -30,9 +39,11 @@ SPEC CHECKSUMS:
   IBAnimatable: d49f9fee0c401b5b08d31b77256b77fb067e0e92
   Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
   NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
+  Realm: c204f1a890f07dea43b14132a6aad118c054b8f2
+  RealmSwift: 4d3c9233544b9cd08a8913e0872b9038eb99b054
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: b10dfabe45e1561034bb8f33b5535363e7fb9c3b
+PODFILE CHECKSUM: 40fb5b76a5592db6a51c57cc87ff009656e31a9c
 
 COCOAPODS: 1.5.2

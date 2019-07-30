@@ -45,22 +45,22 @@ class AddRoomVC: UIViewController {
         guard let price = priceTxtField.text , priceTxtField.text != "" else {return showAlert()}
         guard let description = descriptionTxtField.text , descriptionTxtField.text != "" else {return showAlert()}
         //let image = URL(imageView)
-        AddRoom.instance.main(title: title, price: price, place: place, description: description) { (error, success, errormsg) in
-            if success {
-                print("dd")
-                if errormsg != ""  {
-                    self.showAlert(msgerror: errormsg)
-                }else {
-                    let st = UIStoryboard(name: "Main", bundle: nil)
-                    let vc = st.instantiateViewController(withIdentifier: "HomeScreen")
-                    self.navigationController?.pushViewController(vc, animated: true)
-                }
-            }else {
-                self.showAlert(msgerror: "connection faild unaple to signup try again")
-                print("connection faild unaple to signup")
-            }
-        }
-        
+//        AddRoom.instance.main(title: title, price: price, place: place, description: description) { (error, success, errormsg) in
+//            if success {
+//                print("dd")
+//                if errormsg != ""  {
+//                    self.showAlert(msgerror: errormsg)
+//                }else {
+//                    let st = UIStoryboard(name: "Main", bundle: nil)
+//                    let vc = st.instantiateViewController(withIdentifier: "HomeScreen")
+//                    self.navigationController?.pushViewController(vc, animated: true)
+//                }
+//            }else {
+//                self.showAlert(msgerror: "connection faild unaple to signup try again")
+//                print("connection faild unaple to signup")
+//            }
+//        }
+//        
         
         
         }

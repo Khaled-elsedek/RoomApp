@@ -32,12 +32,11 @@ class LoginVC: UIViewController {
         guard let password = PasswordTxtField.text , PasswordTxtField.text != "" else { showAlert(); return}
         guard password.isValidPassword == true else {return showAlert(msgerror: "enter a valid password")}
         SVProgressHUD.show()
-        AuthService.instance.login(email: email, password: password) { (error : Error?, success : Bool , errormsg : String) in
+        NetworkCall.login(email: email, password: password) { (error : Error?, success : Bool , errormsg : String) in
             if success {
-                
                 if errormsg != ""{
-                    self.showAlert(msgerror: errormsg)
                     SVProgressHUD.dismiss()
+                    self.showAlert(msgerror: errormsg)
                     print("dd")
                 }else {
                     SVProgressHUD.dismiss()
@@ -47,7 +46,7 @@ class LoginVC: UIViewController {
                 }
             } else {
                 SVProgressHUD.dismiss()
-                self.showAlert(msgerror: "connection faild unable to signup try again")
+                self.showAlert(msgerror: "connection faild unable to login try again")
                 print("connection faild unaple to signup")
             }
         }
