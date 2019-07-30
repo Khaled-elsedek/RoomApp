@@ -26,7 +26,7 @@
                   moduleName = "SwiftyCampTaskDay#"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/khaled/Desktop/projects/SwiftyCampTaskDay%23/SwiftyCampTaskDay%23/Extensions/Helper.swift"
-                  timestampString = "586198832.824304"
+                  timestampString = "586199529.741886"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -41,7 +41,7 @@
                   moduleName = "SwiftyCampTaskDay#"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/khaled/Desktop/projects/SwiftyCampTaskDay%23/SwiftyCampTaskDay%23/Extensions/Helper.swift"
-                  timestampString = "586198832.82686"
+                  timestampString = "586199529.743765"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "12"
@@ -56,7 +56,7 @@
                   moduleName = "SwiftyCampTaskDay#"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/khaled/Desktop/projects/SwiftyCampTaskDay%23/SwiftyCampTaskDay%23/Extensions/Helper.swift"
-                  timestampString = "586198832.829152"
+                  timestampString = "586199529.745733"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -80,6 +80,86 @@
             endingLineNumber = "19"
             landmarkName = "restartApp()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftyCampTaskDay#/Auth/NetworkRoute.swift"
+            timestampString = "586199529.520754"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "asURLRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftyCampTaskDay#/Auth/NetworkRoute.swift"
+            timestampString = "586199529.520879"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "asURLRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftyCampTaskDay#/Auth/NetworkRoute.swift"
+            timestampString = "586199529.520945"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "asURLRequest()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftyCampTaskDay_.NetworkRoute.asURLRequest() throws -&gt; Foundation.URLRequest"
+                  moduleName = "SwiftyCampTaskDay#"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/khaled/Desktop/projects/SwiftyCampTaskDay%23/SwiftyCampTaskDay%23/Auth/NetworkRoute.swift"
+                  timestampString = "586199529.76222"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "327">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 () -&gt; Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt; in SwiftyCampTaskDay_.NetworkRoute.asURLRequest() throws -&gt; Foundation.URLRequest"
+                  moduleName = "SwiftyCampTaskDay#"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/khaled/Desktop/projects/SwiftyCampTaskDay%23/SwiftyCampTaskDay%23/Auth/NetworkRoute.swift"
+                  timestampString = "586199529.7643239"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "33">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

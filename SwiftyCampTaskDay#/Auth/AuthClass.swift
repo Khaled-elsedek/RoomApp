@@ -14,6 +14,9 @@ class NetworkCall:NSObject {
                 let json = JSON(respone.result.value)
                 Parser.parseLogin(from: json)
                 completion(nil, true ,"")
+                if let api_token = json["auth_token"].string{
+                    Helper.saveApiToken(token: api_token)
+                }
             default:
                 break
             }
@@ -31,6 +34,9 @@ class NetworkCall:NSObject {
                 let json = JSON(response.result.value)
                 let errormessage = json["message"].string
                 completion(nil, true ,errormessage ?? "")
+                if let api_token = json["auth_token"].string{
+                    Helper.saveApiToken(token: api_token)
+                }
             }
         }
     }
