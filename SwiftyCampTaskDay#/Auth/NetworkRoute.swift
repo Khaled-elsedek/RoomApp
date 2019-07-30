@@ -21,7 +21,6 @@ enum NetworkRoute :URLRequestConvertible {
                 return .post
             case .getRooms:
                 return .get
-                
             }
         }
         let parameters : ([String: Any]?) = {
@@ -32,7 +31,6 @@ enum NetworkRoute :URLRequestConvertible {
                 return nil
             }
         }()
-        
         let url : URL = {
             let destURL : String?
             switch  self {
@@ -42,14 +40,12 @@ enum NetworkRoute :URLRequestConvertible {
                 destURL = URLS.registerURL
             case .getRooms, .addRoom:
                 destURL = URLS.roomsURL
-                
             }
             var url : URL!
             if let destURL = destURL {
                 url = URL(string: destURL)
             }
             return url
-            
         }()
         let headers : HTTPHeaders? = {
             let authHeaders : [String:String]?
@@ -73,7 +69,5 @@ enum NetworkRoute :URLRequestConvertible {
             }
         }()
         return try encoding.encode(urlRequest, with: parameters)
-        
     }
-    
 }

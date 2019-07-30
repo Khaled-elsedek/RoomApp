@@ -11,14 +11,11 @@ import SVProgressHUD
 
 class LoginVC: UIViewController {
     
-    
     @IBOutlet weak var emailTxtField: UITextField!
     @IBOutlet weak var PasswordTxtField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
     func showAlert(msgerror:String = "complete all fields"){
         let alert = UIAlertController(title: "error", message: msgerror, preferredStyle: .alert)
@@ -37,7 +34,6 @@ class LoginVC: UIViewController {
                 if errormsg != ""{
                     SVProgressHUD.dismiss()
                     self.showAlert(msgerror: errormsg)
-                    print("dd")
                 }else {
                     SVProgressHUD.dismiss()
                     let st = UIStoryboard(name: "Main", bundle: nil)
@@ -47,7 +43,6 @@ class LoginVC: UIViewController {
             } else {
                 SVProgressHUD.dismiss()
                 self.showAlert(msgerror: "connection faild unable to login try again")
-                print("connection faild unaple to signup")
             }
         }
         
@@ -65,7 +60,5 @@ class LoginVC: UIViewController {
         let st = UIStoryboard(name: "Main", bundle: nil)
         let vc = st.instantiateViewController(withIdentifier: "RegisterationScreen")
         navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    
+    } 
 }

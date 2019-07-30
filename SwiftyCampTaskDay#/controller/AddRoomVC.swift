@@ -60,14 +60,10 @@ class AddRoomVC: UIViewController {
 //                print("connection faild unaple to signup")
 //            }
 //        }
-//        
-        
-        
         }
     var pickerImage: UIImage?{
         didSet{
             imageView.image = pickerImage
-            
         }
     }
 }

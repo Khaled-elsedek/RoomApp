@@ -18,10 +18,8 @@ class RegestrationVC: UIViewController {
     @IBOutlet weak var signUpBTn: AnimatableButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
+
     func showAlert(msgerror:String = "complete all fields"){
         let alert = UIAlertController(title: "error", message: msgerror, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
@@ -29,7 +27,6 @@ class RegestrationVC: UIViewController {
     }
     
     @IBAction func signupBtnWasPressed(_ sender: Any) {
-        
         
         guard let email = emailTextField.text , emailTextField.text != "" else { showAlert(); return}
         guard email.isEmail == true else {return showAlert(msgerror: "enter a valid mail")}
@@ -39,8 +36,6 @@ class RegestrationVC: UIViewController {
         SVProgressHUD.show()
         NetworkCall.signUp(name: name, email: email, password: password) { (error, success, errormsg) in
             if success {
-                print("dd")
-                
                 if errormsg != "Account created successfully"{
                     self.showAlert(msgerror: errormsg)
                 }else {
@@ -49,18 +44,10 @@ class RegestrationVC: UIViewController {
                     let vc = st.instantiateViewController(withIdentifier: "HomeScreen")
                     self.navigationController?.pushViewController(vc, animated: true)
                     self.signUpBTn.isEnabled = false
-                    
                 }
             }else {
                 self.showAlert(msgerror: "connection faild unaple to signup try again")
-                print("connection faild unaple to signup")
             }
         }
-        
             }
-    
-    
-
-    
-
 }

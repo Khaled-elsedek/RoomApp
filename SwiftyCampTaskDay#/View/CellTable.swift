@@ -25,8 +25,4 @@ class CellTable: UITableViewCell {
             self.adressLbl.text = item.stateAdress
         }
     }
-    
-    
-    
-
 }

@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 extension String {
      //validate email
     var isEmail: Bool {
@@ -19,8 +18,6 @@ extension String {
             return false
         }
     }
-    
-    
     //validate Password
     var isValidPassword: Bool {
         do {

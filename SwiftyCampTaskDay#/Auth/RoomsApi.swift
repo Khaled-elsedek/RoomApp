@@ -35,6 +35,4 @@ class FetchRooms : NSObject {
         let parsRooms = Parser.parseRooms(from: JSON(dbRooms).array!)
         completion(nil,parsRooms)
     }
-    
-    
 }

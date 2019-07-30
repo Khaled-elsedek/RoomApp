@@ -13,8 +13,6 @@ class DetailVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
 
@@ -29,5 +27,4 @@ class DetailVC: UIViewController {
         let vc = st.instantiateViewController(withIdentifier: "roomLocation")
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
 }

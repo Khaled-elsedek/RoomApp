@@ -21,7 +21,6 @@ class NetworkCall:NSObject {
                 break
             }
         }
-        
     }
     class func signUp(name:String,email:String,password:String, completion: @escaping (Error?,Bool ,_ msgerror  :String) ->Void){
         let paramters = ["name":name,"email":email,"password":password]

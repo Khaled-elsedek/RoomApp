@@ -12,5 +12,4 @@ struct URLS{
     static let loginURL:String = baseURL + "auth/login"
     static let registerURL:String = baseURL + "signup"
     static let roomsURL:String = baseURL + "rooms"
-    
 }

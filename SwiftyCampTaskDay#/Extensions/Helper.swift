@@ -36,6 +36,5 @@ class Helper: NSObject {
         let def = UserDefaults.standard
         return def.object(forKey: "api_token") as? String
     }
-    
 }
 
