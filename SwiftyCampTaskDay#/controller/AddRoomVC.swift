@@ -10,6 +10,7 @@ import UIKit
 
 class AddRoomVC: UIViewController {
 
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleTxtField: UITextField!
     @IBOutlet weak var placeTxtField: UITextField!

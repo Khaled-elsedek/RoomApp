@@ -41,7 +41,7 @@ class HomeVC: UIViewController , UITableViewDelegate , UITableViewDataSource{
     }
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
-        case 1:
+        case indexPath.row:
             let st = UIStoryboard(name: "Main", bundle: nil)
             let vc = st.instantiateViewController(withIdentifier: "DetailScreen") 
             navigationController?.pushViewController(vc, animated: true)
@@ -74,7 +74,7 @@ extension HomeVC {
                     SVProgressHUD.dismiss()
                     let st = UIStoryboard(name: "Main", bundle: nil)
                     let vc = st.instantiateViewController(withIdentifier: "LoginScreen")
-                    self?.navigationController?.pushViewController(vc, animated: true)
+                    self?.navigationController?.pushViewController(vc, animated: true) 
                     self!.showAlert(msgerror: errormsg)
                 }
             }

@@ -641,7 +641,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="AddRoomBtnWasPRessed:" destination="J8a-gE-RXT" eventType="touchUpInside" id="QhF-k5-LQH"/>
                                     <action selector="roomLocationBtnWasPressed:" destination="J8a-gE-RXT" eventType="touchUpInside" id="oJq-hd-NjL"/>
                                 </connections>
                             </button>
