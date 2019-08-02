@@ -45,20 +45,17 @@ class LoginVC: UIViewController {
                 self.showAlert(msgerror: "connection faild unable to login try again")
             }
         }
-        
-    }
-    @IBAction func GoogleBtnWasPressed(_ sender: Any) {
-    }
-    @IBAction func faceBtnWasPressed(_ sender: Any) {
-    }
-    @IBAction func twitterBtnWasPRessed(_ sender: Any) {
-    }
-    @IBAction func LinkedInBtnWasPressed(_ sender: Any) {
     }
     
     @IBAction func CreateBtnWasPressed(_ sender: Any) {
         let st = UIStoryboard(name: "Main", bundle: nil)
         let vc = st.instantiateViewController(withIdentifier: "RegisterationScreen")
         navigationController?.pushViewController(vc, animated: true)
-    } 
+    }
+    
+    @IBAction func skipToMainBtnWasPressed(_ sender: Any) {
+        let st = UIStoryboard(name: "Main", bundle: nil)
+        let vc = st.instantiateViewController(withIdentifier: "HomeScreen")
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

@@ -179,30 +179,18 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhm-el-ztL">
                                         <rect key="frame" x="0.0" y="0.0" width="93.666666666666671" height="73"/>
                                         <state key="normal" image="google"/>
-                                        <connections>
-                                            <action selector="GoogleBtnWasPressed:" destination="S8r-EN-4Xn" eventType="touchUpInside" id="et5-lb-Ycl"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgB-9W-aRh">
                                         <rect key="frame" x="93.666666666666686" y="0.0" width="93.333333333333314" height="73"/>
                                         <state key="normal" image="face"/>
-                                        <connections>
-                                            <action selector="faceBtnWasPressed:" destination="S8r-EN-4Xn" eventType="touchUpInside" id="X0D-Hn-DQR"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FcO-5x-eaS">
                                         <rect key="frame" x="187" y="0.0" width="93.666666666666686" height="73"/>
                                         <state key="normal" image="twitter"/>
-                                        <connections>
-                                            <action selector="twitterBtnWasPRessed:" destination="S8r-EN-4Xn" eventType="touchUpInside" id="Ock-XF-rBW"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKf-XO-6Bh">
                                         <rect key="frame" x="280.66666666666669" y="0.0" width="93.333333333333314" height="73"/>
                                         <state key="normal" image="linkedin"/>
-                                        <connections>
-                                            <action selector="LinkedInBtnWasPressed:" destination="S8r-EN-4Xn" eventType="touchUpInside" id="XaM-kd-OLJ"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -227,6 +215,37 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yc2-72-LOg" customClass="AnimatableButton" customModule="IBAnimatable">
+                                <rect key="frame" x="107" y="490.33333333333331" width="200" height="39.999999999999943"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.47058823529999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Z0W-fk-Sf9"/>
+                                    <constraint firstAttribute="width" constant="200" id="j8J-PV-M46"/>
+                                </constraints>
+                                <state key="normal" title="SKIP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                        <point key="value" x="0.0" y="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="skipToMainBtnWasPressed:" destination="S8r-EN-4Xn" eventType="touchUpInside" id="RX0-f1-XsV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -234,17 +253,19 @@
                             <constraint firstItem="090-NG-l3R" firstAttribute="trailing" secondItem="Xrl-AE-qpI" secondAttribute="trailing" constant="20" id="4Ig-Jh-YtV"/>
                             <constraint firstItem="jyp-9J-UAy" firstAttribute="leading" secondItem="090-NG-l3R" secondAttribute="leading" constant="20" id="7ce-Kh-V67"/>
                             <constraint firstItem="UO5-my-8so" firstAttribute="centerX" secondItem="mYb-8n-Lx0" secondAttribute="centerX" id="9Wt-HH-7sm"/>
+                            <constraint firstItem="Yc2-72-LOg" firstAttribute="centerX" secondItem="mYb-8n-Lx0" secondAttribute="centerX" id="9kd-zk-Yka"/>
                             <constraint firstItem="Xrl-AE-qpI" firstAttribute="top" secondItem="iTj-w4-5Y2" secondAttribute="bottom" constant="50" id="FeL-XM-ZCX"/>
+                            <constraint firstItem="Yc2-72-LOg" firstAttribute="top" secondItem="UO5-my-8so" secondAttribute="bottom" constant="10" id="HHo-eY-HHr"/>
                             <constraint firstItem="jgx-Yp-7i3" firstAttribute="top" secondItem="Xrl-AE-qpI" secondAttribute="bottom" constant="10" id="OOk-pk-Jz9"/>
                             <constraint firstItem="9n7-La-GZk" firstAttribute="top" secondItem="Xrl-AE-qpI" secondAttribute="bottom" constant="70" id="U1b-Bu-7pL"/>
                             <constraint firstItem="iTj-w4-5Y2" firstAttribute="centerX" secondItem="mYb-8n-Lx0" secondAttribute="centerX" id="UGz-G4-s1D"/>
                             <constraint firstItem="Xrl-AE-qpI" firstAttribute="leading" secondItem="090-NG-l3R" secondAttribute="leading" constant="20" id="Yww-C3-aZC"/>
                             <constraint firstItem="090-NG-l3R" firstAttribute="trailing" secondItem="jyp-9J-UAy" secondAttribute="trailing" constant="20" id="bZ6-3G-7MU"/>
-                            <constraint firstItem="jyp-9J-UAy" firstAttribute="top" secondItem="UO5-my-8so" secondAttribute="bottom" constant="70" id="dPv-GA-zn8"/>
                             <constraint firstItem="090-NG-l3R" firstAttribute="bottom" secondItem="eFZ-GX-GQD" secondAttribute="bottom" constant="20" id="dSW-n9-ceM"/>
                             <constraint firstItem="ZgD-94-2pj" firstAttribute="top" secondItem="090-NG-l3R" secondAttribute="top" id="dlK-VJ-pyP"/>
                             <constraint firstItem="ZgD-94-2pj" firstAttribute="centerX" secondItem="mYb-8n-Lx0" secondAttribute="centerX" id="n1I-dh-xC9"/>
                             <constraint firstItem="iTj-w4-5Y2" firstAttribute="top" secondItem="ZgD-94-2pj" secondAttribute="bottom" constant="15" id="n34-nm-q2n"/>
+                            <constraint firstItem="jyp-9J-UAy" firstAttribute="top" secondItem="Yc2-72-LOg" secondAttribute="bottom" constant="20" id="nCT-cm-YWP"/>
                             <constraint firstItem="eFZ-GX-GQD" firstAttribute="centerX" secondItem="mYb-8n-Lx0" secondAttribute="centerX" id="o3e-OL-mtB"/>
                             <constraint firstItem="090-NG-l3R" firstAttribute="trailing" secondItem="jgx-Yp-7i3" secondAttribute="trailing" constant="20" id="sXH-1h-li4"/>
                             <constraint firstItem="UO5-my-8so" firstAttribute="top" secondItem="9n7-La-GZk" secondAttribute="bottom" constant="30" id="xZk-Mw-j5o"/>
@@ -641,7 +662,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="AddRoomBtnWasPRessed:" destination="J8a-gE-RXT" eventType="touchUpInside" id="QhF-k5-LQH"/>
                                     <action selector="roomLocationBtnWasPressed:" destination="J8a-gE-RXT" eventType="touchUpInside" id="oJq-hd-NjL"/>
                                 </connections>
                             </button>

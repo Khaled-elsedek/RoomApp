@@ -11,7 +11,6 @@
 		29054D8722E24C6D007FB4F2 /* URLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29054D8622E24C6D007FB4F2 /* URLS.swift */; };
 		29054D8922E24CC4007FB4F2 /* AuthClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29054D8822E24CC4007FB4F2 /* AuthClass.swift */; };
 		29054D8B22E24E7C007FB4F2 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29054D8A22E24E7C007FB4F2 /* Helper.swift */; };
-		29054D8E22E25600007FB4F2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29054D8D22E25600007FB4F2 /* Model.swift */; };
 		29054D9022E256CF007FB4F2 /* RoomsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29054D8F22E256CF007FB4F2 /* RoomsApi.swift */; };
 		29420B4722D7F94F00138694 /* WelcomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29420B4622D7F94F00138694 /* WelcomVC.swift */; };
 		29420B4922D7F96100138694 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29420B4822D7F96100138694 /* LoginVC.swift */; };
@@ -40,7 +39,6 @@
 		29054D8622E24C6D007FB4F2 /* URLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLS.swift; sourceTree = "<group>"; };
 		29054D8822E24CC4007FB4F2 /* AuthClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthClass.swift; sourceTree = "<group>"; };
 		29054D8A22E24E7C007FB4F2 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
-		29054D8D22E25600007FB4F2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		29054D8F22E256CF007FB4F2 /* RoomsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsApi.swift; sourceTree = "<group>"; };
 		29420B4622D7F94F00138694 /* WelcomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomVC.swift; sourceTree = "<group>"; };
 		29420B4822D7F96100138694 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -105,7 +103,9 @@
 		29054D8C22E255DD007FB4F2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				29054D8D22E25600007FB4F2 /* Model.swift */,
+				29ECAF3C22F09D7C00FF5E58 /* RealmDB */,
+				29420B5022D800EE00138694 /* Extensions */,
+				29054D8522E24C5C007FB4F2 /* Auth */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,10 +164,7 @@
 		29A6ED9222D60C6D00A483A1 /* SwiftyCampTaskDay# */ = {
 			isa = PBXGroup;
 			children = (
-				29ECAF3C22F09D7C00FF5E58 /* RealmDB */,
 				29054D8C22E255DD007FB4F2 /* Model */,
-				29054D8522E24C5C007FB4F2 /* Auth */,
-				29420B5022D800EE00138694 /* Extensions */,
 				29420B4522D7F52300138694 /* View */,
 				29420B4422D7F51A00138694 /* controller */,
 				29A6ED9322D60C6D00A483A1 /* AppDelegate.swift */,
@@ -331,7 +328,6 @@
 				29420B4D22D7F97E00138694 /* DetailVC.swift in Sources */,
 				29ECAF3B22F09CA600FF5E58 /* JSONParser.swift in Sources */,
 				29054D8722E24C6D007FB4F2 /* URLS.swift in Sources */,
-				29054D8E22E25600007FB4F2 /* Model.swift in Sources */,
 				29A6ED9422D60C6D00A483A1 /* AppDelegate.swift in Sources */,
 				29ECAF3E22F09D9500FF5E58 /* RealmDB.swift in Sources */,
 				29420B4B22D7F97200138694 /* HomeVC.swift in Sources */,
