@@ -8,7 +8,8 @@
 
 import UIKit
 
-class DetailVC: UIViewController {
+class DetailViewController: UIViewController {
+    
     var detail = ""
 
     override func viewDidLoad() {
@@ -16,13 +17,13 @@ class DetailVC: UIViewController {
     }
     
 
-    @IBAction func AddRoomBtnWasPRessed(_ sender: Any) {
+    @IBAction private func AddRoomBtnWasPRessed(_ sender: Any) {
         let st = UIStoryboard(name: "Main", bundle: nil)
         let vc = st.instantiateViewController(withIdentifier: "AddRoom")
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    @IBAction func roomLocationBtnWasPressed(_ sender: Any) {
+    @IBAction private func roomLocationBtnWasPressed(_ sender: Any) {
         let st = UIStoryboard(name: "Main", bundle: nil)
         let vc = st.instantiateViewController(withIdentifier: "roomLocation")
         self.navigationController?.pushViewController(vc, animated: true)

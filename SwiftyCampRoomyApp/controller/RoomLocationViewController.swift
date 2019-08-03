@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RoomLocationVC: UIViewController {
+class RoomLocationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

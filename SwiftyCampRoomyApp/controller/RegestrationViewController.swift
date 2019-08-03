@@ -10,12 +10,12 @@ import UIKit
 import IBAnimatable
 import SVProgressHUD
 
-class RegestrationVC: UIViewController {
+class RegestrationViewController: UIViewController {
 
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var signUpBTn: AnimatableButton!
+    @IBOutlet private weak var nameTextField: UITextField!
+    @IBOutlet private weak var emailTextField: UITextField!
+    @IBOutlet private weak var passwordTextField: UITextField!
+    @IBOutlet private weak var signUpBTn: AnimatableButton!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -26,7 +26,7 @@ class RegestrationVC: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    @IBAction func signupBtnWasPressed(_ sender: Any) {
+    @IBAction private func signupBtnWasPressed(_ sender: Any) {
         
         guard let email = emailTextField.text , emailTextField.text != "" else { showAlert(); return}
         guard email.isEmail == true else {return showAlert(msgerror: "enter a valid mail")}
@@ -49,5 +49,5 @@ class RegestrationVC: UIViewController {
                 self.showAlert(msgerror: "connection faild unaple to signup try again")
             }
         }
-            }
+    }
 }

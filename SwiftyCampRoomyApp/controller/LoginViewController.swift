@@ -9,10 +9,10 @@
 import UIKit
 import SVProgressHUD
 
-class LoginVC: UIViewController {
+class LoginViewController: UIViewController {
     
-    @IBOutlet weak var emailTxtField: UITextField!
-    @IBOutlet weak var PasswordTxtField: UITextField!
+    @IBOutlet private weak var emailTxtField: UITextField!
+    @IBOutlet private weak var PasswordTxtField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class LoginVC: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    @IBAction func SignInBtnWasPRessed(_ sender: Any) {
+    @IBAction private func SignInBtnWasPRessed(_ sender: Any) {
         guard let email = emailTxtField.text , emailTxtField.text != "" else { showAlert(); return}
         guard email.isEmail == true else {return showAlert(msgerror: "enter a valid mail")}
         guard let password = PasswordTxtField.text , PasswordTxtField.text != "" else { showAlert(); return}
@@ -47,13 +47,13 @@ class LoginVC: UIViewController {
         }
     }
     
-    @IBAction func CreateBtnWasPressed(_ sender: Any) {
+    @IBAction private func CreateBtnWasPressed(_ sender: Any) {
         let st = UIStoryboard(name: "Main", bundle: nil)
         let vc = st.instantiateViewController(withIdentifier: "RegisterationScreen")
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    @IBAction func skipToMainBtnWasPressed(_ sender: Any) {
+    @IBAction private func skipToMainBtnWasPressed(_ sender: Any) {
         let st = UIStoryboard(name: "Main", bundle: nil)
         let vc = st.instantiateViewController(withIdentifier: "HomeScreen")
         self.navigationController?.pushViewController(vc, animated: true)

@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--WelcomVC-->
+        <!--Welcom View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="StartScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="WelcomVC" customModule="SwiftyCampTaskDay_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="WelcomViewController" customModule="SwiftyCampTaskDay_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="18.75"/>
         </scene>
-        <!--LoginVC-->
+        <!--Login View Controller-->
         <scene sceneID="MOC-jn-2eM">
             <objects>
-                <viewController storyboardIdentifier="LoginScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="S8r-EN-4Xn" customClass="LoginVC" customModule="SwiftyCampTaskDay_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="S8r-EN-4Xn" customClass="LoginViewController" customModule="SwiftyCampTaskDay_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mYb-8n-Lx0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -281,10 +281,10 @@
             </objects>
             <point key="canvasLocation" x="1739" y="19"/>
         </scene>
-        <!--RegestrationVC-->
+        <!--Regestration View Controller-->
         <scene sceneID="bS4-xp-ZnI">
             <objects>
-                <viewController storyboardIdentifier="RegisterationScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Knb-16-DmV" customClass="RegestrationVC" customModule="SwiftyCampTaskDay_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterationScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Knb-16-DmV" customClass="RegestrationViewController" customModule="SwiftyCampTaskDay_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EUe-J2-Fvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -421,10 +421,10 @@
             </objects>
             <point key="canvasLocation" x="1738" y="827"/>
         </scene>
-        <!--HomeVC-->
+        <!--Home View Controller-->
         <scene sceneID="LJI-7r-BUi">
             <objects>
-                <viewController storyboardIdentifier="HomeScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zei-dD-PnO" customClass="HomeVC" customModule="SwiftyCampTaskDay_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zei-dD-PnO" customClass="HomeViewController" customModule="SwiftyCampTaskDay_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ahQ-KP-pfI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -456,10 +456,10 @@
             </objects>
             <point key="canvasLocation" x="2564" y="19"/>
         </scene>
-        <!--Add RoomVC-->
+        <!--Add Room View Controller-->
         <scene sceneID="K2y-i1-D2G">
             <objects>
-                <viewController storyboardIdentifier="AddRoom" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OLo-mX-SsE" customClass="AddRoomVC" customModule="SwiftyCampTaskDay_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddRoom" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OLo-mX-SsE" customClass="AddRoomViewController" customModule="SwiftyCampTaskDay_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oGB-Xx-ufE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -610,10 +610,10 @@
             </objects>
             <point key="canvasLocation" x="3387" y="827"/>
         </scene>
-        <!--DetailVC-->
+        <!--Detail View Controller-->
         <scene sceneID="jc0-Dy-2Jb">
             <objects>
-                <viewController storyboardIdentifier="DetailScreen" id="J8a-gE-RXT" customClass="DetailVC" customModule="SwiftyCampTaskDay_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailScreen" id="J8a-gE-RXT" customClass="DetailViewController" customModule="SwiftyCampTaskDay_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g3C-LL-X9J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
