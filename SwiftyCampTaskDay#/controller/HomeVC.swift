@@ -31,6 +31,7 @@ class HomeVC: UIViewController , UITableViewDelegate , UITableViewDataSource{
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:CellTable = tableView.dequeueReusableCell(withIdentifier:"tablecell" , for: indexPath) as! CellTable
         cell.item = rooms[indexPath.row]
+        
         return cell
     }
     
@@ -43,7 +44,8 @@ class HomeVC: UIViewController , UITableViewDelegate , UITableViewDataSource{
         case indexPath.row:
             let st = UIStoryboard(name: "Main", bundle: nil)
             let vc = st.instantiateViewController(withIdentifier: "DetailScreen") 
-            navigationController?.pushViewController(vc, animated: true)
+            navigationController?.pushViewController(vc, animated: true) //as! DetailVC
+            //DetailVC.detail = "\(rooms.description)"
         default:
             break
         }

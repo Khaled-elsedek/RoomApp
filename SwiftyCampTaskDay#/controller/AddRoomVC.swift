@@ -18,13 +18,12 @@ class AddRoomVC: UIViewController {
     @IBOutlet weak var descriptionTxtField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-    
-    
-    
-    
-    
+    func showAlert(msgerror:String = "complete all fields"){
+        let alert = UIAlertController(title: "error", message: msgerror, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
     @IBAction func addImageBtnWasPressed(_ sender: Any) {
         let picker = UIImagePickerController()
         picker.allowsEditing = true
@@ -32,13 +31,6 @@ class AddRoomVC: UIViewController {
         picker.delegate = self
         self.present(picker, animated: true, completion: nil)
     }
-    
-    func showAlert(msgerror:String = "complete all fields"){
-        let alert = UIAlertController(title: "error", message: msgerror, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
-    }
-    
     @IBAction func addRoomBtnWasPRessed(_ sender: Any) {
         guard let title = titleTxtField.text , titleTxtField.text != "" else { showAlert(); return}
         guard let place = placeTxtField.text , placeTxtField.text != "" else {return showAlert()}
@@ -57,7 +49,7 @@ class AddRoomVC: UIViewController {
                 self.showAlert(msgerror: "connection failed unaple to add the room please try again")
             }
         }
-        }
+    }
     var pickerImage: UIImage?{
         didSet{
             imageView.image = pickerImage

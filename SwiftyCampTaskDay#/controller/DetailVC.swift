@@ -9,7 +9,7 @@
 import UIKit
 
 class DetailVC: UIViewController {
-    var name = ""
+    var detail = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
