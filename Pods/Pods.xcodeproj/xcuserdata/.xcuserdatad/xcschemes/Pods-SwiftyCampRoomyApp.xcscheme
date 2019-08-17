@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2A0374C38F87F1C3860934E82E54F3C7"
-               BlueprintName = "Pods-SwiftyCampTaskDay#"
+               BlueprintIdentifier = "9DEDFDB2A378BF25A150F3A3686FA093"
+               BlueprintName = "Pods-SwiftyCampRoomyApp"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "Pods-SwiftyCampTaskDay#.framework">
+               BuildableName = "Pods-SwiftyCampRoomyApp.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

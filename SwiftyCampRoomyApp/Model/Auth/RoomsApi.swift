@@ -11,7 +11,7 @@ import SwiftyJSON
 
 class FetchRooms : NSObject {
     class func getRoomsInBackend ( completion: @escaping (Error?,[Room]?) -> Void ) {
-        guard let tokens = UserDefaults.standard.object(forKey: "auth_token") as? String else {
+        guard (UserDefaults.standard.object(forKey: "auth_token") as? String) != nil else {
             completion(nil,nil)
             return
         }

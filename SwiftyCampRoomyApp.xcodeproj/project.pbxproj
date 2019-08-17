@@ -12,6 +12,7 @@
 		29054D8922E24CC4007FB4F2 /* AuthClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29054D8822E24CC4007FB4F2 /* AuthClass.swift */; };
 		29054D8B22E24E7C007FB4F2 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29054D8A22E24E7C007FB4F2 /* Helper.swift */; };
 		29054D9022E256CF007FB4F2 /* RoomsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29054D8F22E256CF007FB4F2 /* RoomsApi.swift */; };
+		291AE11823080292009D94A8 /* SwiftyCampRoomyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291AE11723080292009D94A8 /* SwiftyCampRoomyAppTests.swift */; };
 		29420B4722D7F94F00138694 /* WelcomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29420B4622D7F94F00138694 /* WelcomViewController.swift */; };
 		29420B4922D7F96100138694 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29420B4822D7F96100138694 /* LoginViewController.swift */; };
 		29420B4B22D7F97200138694 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29420B4A22D7F97200138694 /* HomeViewController.swift */; };
@@ -32,15 +33,30 @@
 		29ECAF3B22F09CA600FF5E58 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ECAF3A22F09CA600FF5E58 /* JSONParser.swift */; };
 		29ECAF3E22F09D9500FF5E58 /* RealmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ECAF3D22F09D9500FF5E58 /* RealmDB.swift */; };
 		29F5AF9922EB2F1400D0148B /* RoomLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F5AF9822EB2F1400D0148B /* RoomLocationViewController.swift */; };
+		2F90237AC042BC172B8F1812 /* Pods_SwiftyCampRoomyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA868B8BF87CEF8BB3F1077 /* Pods_SwiftyCampRoomyApp.framework */; };
 		4CBE0EB294F42C35D3975EAD /* Pods_SwiftyCampTaskDay_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E07B2143BC1A7F1902AE2B6 /* Pods_SwiftyCampTaskDay_.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		291AE11A23080292009D94A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29A6ED8822D60C6D00A483A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29A6ED8F22D60C6D00A483A1;
+			remoteInfo = SwiftyCampRoomyApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1AA868B8BF87CEF8BB3F1077 /* Pods_SwiftyCampRoomyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyCampRoomyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29054D8322E248A8007FB4F2 /* RegestrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegestrationViewController.swift; sourceTree = "<group>"; };
 		29054D8622E24C6D007FB4F2 /* URLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLS.swift; sourceTree = "<group>"; };
 		29054D8822E24CC4007FB4F2 /* AuthClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthClass.swift; sourceTree = "<group>"; };
 		29054D8A22E24E7C007FB4F2 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		29054D8F22E256CF007FB4F2 /* RoomsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsApi.swift; sourceTree = "<group>"; };
+		291AE11523080292009D94A8 /* SwiftyCampRoomyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyCampRoomyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		291AE11723080292009D94A8 /* SwiftyCampRoomyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyCampRoomyAppTests.swift; sourceTree = "<group>"; };
+		291AE11923080292009D94A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29420B4622D7F94F00138694 /* WelcomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomViewController.swift; sourceTree = "<group>"; };
 		29420B4822D7F96100138694 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		29420B4A22D7F97200138694 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -66,14 +82,24 @@
 		92521800A4D0E1A7AFBED40C /* Pods-SwiftyCampTaskDay#.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyCampTaskDay#.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyCampTaskDay#/Pods-SwiftyCampTaskDay#.debug.xcconfig"; sourceTree = "<group>"; };
 		9D0DAA4C9A84C31986B8E479 /* Pods-SwiftyCampTaskDay#.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyCampTaskDay#.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyCampTaskDay#/Pods-SwiftyCampTaskDay#.release.xcconfig"; sourceTree = "<group>"; };
 		9E07B2143BC1A7F1902AE2B6 /* Pods_SwiftyCampTaskDay_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyCampTaskDay_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC105EC30D8A24C22FFD5B74 /* Pods-SwiftyCampRoomyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyCampRoomyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyCampRoomyApp/Pods-SwiftyCampRoomyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F89D62EA3C6DC20CE95588E1 /* Pods-SwiftyCampRoomyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyCampRoomyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyCampRoomyApp/Pods-SwiftyCampRoomyApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		291AE11223080292009D94A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29A6ED8D22D60C6D00A483A1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4CBE0EB294F42C35D3975EAD /* Pods_SwiftyCampTaskDay_.framework in Frameworks */,
+				2F90237AC042BC172B8F1812 /* Pods_SwiftyCampRoomyApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				9E07B2143BC1A7F1902AE2B6 /* Pods_SwiftyCampTaskDay_.framework */,
+				1AA868B8BF87CEF8BB3F1077 /* Pods_SwiftyCampRoomyApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,6 +137,15 @@
 				29054D8522E24C5C007FB4F2 /* Auth */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		291AE11623080292009D94A8 /* SwiftyCampRoomyAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				291AE11723080292009D94A8 /* SwiftyCampRoomyAppTests.swift */,
+				291AE11923080292009D94A8 /* Info.plist */,
+			);
+			path = SwiftyCampRoomyAppTests;
 			sourceTree = "<group>";
 		};
 		29420B4422D7F51A00138694 /* controller */ = {
@@ -150,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				29A6ED9222D60C6D00A483A1 /* SwiftyCampRoomyApp */,
+				291AE11623080292009D94A8 /* SwiftyCampRoomyAppTests */,
 				29A6ED9122D60C6D00A483A1 /* Products */,
 				CECEF1D740E3507DFBAA8E8B /* Pods */,
 				21803151645781AC00435926 /* Frameworks */,
@@ -160,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				29A6ED9022D60C6D00A483A1 /* SwiftyCampRoomyApp.app */,
+				291AE11523080292009D94A8 /* SwiftyCampRoomyAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,6 +230,8 @@
 			children = (
 				92521800A4D0E1A7AFBED40C /* Pods-SwiftyCampTaskDay#.debug.xcconfig */,
 				9D0DAA4C9A84C31986B8E479 /* Pods-SwiftyCampTaskDay#.release.xcconfig */,
+				CC105EC30D8A24C22FFD5B74 /* Pods-SwiftyCampRoomyApp.debug.xcconfig */,
+				F89D62EA3C6DC20CE95588E1 /* Pods-SwiftyCampRoomyApp.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -199,6 +239,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		291AE11423080292009D94A8 /* SwiftyCampRoomyAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 291AE11E23080292009D94A8 /* Build configuration list for PBXNativeTarget "SwiftyCampRoomyAppTests" */;
+			buildPhases = (
+				291AE11123080292009D94A8 /* Sources */,
+				291AE11223080292009D94A8 /* Frameworks */,
+				291AE11323080292009D94A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				291AE11B23080292009D94A8 /* PBXTargetDependency */,
+			);
+			name = SwiftyCampRoomyAppTests;
+			productName = SwiftyCampRoomyAppTests;
+			productReference = 291AE11523080292009D94A8 /* SwiftyCampRoomyAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		29A6ED8F22D60C6D00A483A1 /* SwiftyCampRoomyApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29A6EDA222D60C6E00A483A1 /* Build configuration list for PBXNativeTarget "SwiftyCampRoomyApp" */;
@@ -224,10 +282,14 @@
 		29A6ED8822D60C6D00A483A1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Khaled;
 				TargetAttributes = {
+					291AE11423080292009D94A8 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 29A6ED8F22D60C6D00A483A1;
+					};
 					29A6ED8F22D60C6D00A483A1 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -247,11 +309,19 @@
 			projectRoot = "";
 			targets = (
 				29A6ED8F22D60C6D00A483A1 /* SwiftyCampRoomyApp */,
+				291AE11423080292009D94A8 /* SwiftyCampRoomyAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		291AE11323080292009D94A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29A6ED8E22D60C6D00A483A1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,7 +347,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SwiftyCampTaskDay#-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SwiftyCampRoomyApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -290,7 +360,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftyCampTaskDay#/Pods-SwiftyCampTaskDay#-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftyCampRoomyApp/Pods-SwiftyCampRoomyApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -313,12 +383,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftyCampTaskDay#/Pods-SwiftyCampTaskDay#-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftyCampRoomyApp/Pods-SwiftyCampRoomyApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		291AE11123080292009D94A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291AE11823080292009D94A8 /* SwiftyCampRoomyAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29A6ED8C22D60C6D00A483A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -349,6 +427,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		291AE11B23080292009D94A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29A6ED8F22D60C6D00A483A1 /* SwiftyCampRoomyApp */;
+			targetProxy = 291AE11A23080292009D94A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		29A6ED9722D60C6D00A483A1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -369,6 +455,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		291AE11C23080292009D94A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68G62R97AP;
+				INFOPLIST_FILE = SwiftyCampRoomyAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = khaled.SwiftyCampRoomyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftyCampRoomyApp.app/SwiftyCampRoomyApp";
+			};
+			name = Debug;
+		};
+		291AE11D23080292009D94A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68G62R97AP;
+				INFOPLIST_FILE = SwiftyCampRoomyAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = khaled.SwiftyCampRoomyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftyCampRoomyApp.app/SwiftyCampRoomyApp";
+			};
+			name = Release;
+		};
 		29A6EDA022D60C6E00A483A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -487,7 +615,7 @@
 		};
 		29A6EDA322D60C6E00A483A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92521800A4D0E1A7AFBED40C /* Pods-SwiftyCampTaskDay#.debug.xcconfig */;
+			baseConfigurationReference = CC105EC30D8A24C22FFD5B74 /* Pods-SwiftyCampRoomyApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -506,7 +634,7 @@
 		};
 		29A6EDA422D60C6E00A483A1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D0DAA4C9A84C31986B8E479 /* Pods-SwiftyCampTaskDay#.release.xcconfig */;
+			baseConfigurationReference = F89D62EA3C6DC20CE95588E1 /* Pods-SwiftyCampRoomyApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +654,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		291AE11E23080292009D94A8 /* Build configuration list for PBXNativeTarget "SwiftyCampRoomyAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				291AE11C23080292009D94A8 /* Debug */,
+				291AE11D23080292009D94A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		29A6ED8B22D60C6D00A483A1 /* Build configuration list for PBXProject "SwiftyCampRoomyApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

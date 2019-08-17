@@ -18,14 +18,14 @@ class AddRooms : NSObject {
             switch response.result {
             case .failure(let error):
                 let resData = response.data
-                let json = JSON(resData)
+                let json = JSON(resData as Any)
                 if let errormessage = json["message"].string{
                     completion(error , false , errormessage)
                 }
                 
             case .success(let value):
                 let resData = response.data
-                let json = JSON(resData)
+                let json = JSON(resData as Any)
                 if let errormessage = json["message"].string{
                     completion(nil , true , errormessage)
                 } else {

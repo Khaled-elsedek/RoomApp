@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_SwiftyCampTaskDay_VersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_SwiftyCampTaskDay_VersionString[];
+FOUNDATION_EXPORT double Pods_SwiftyCampRoomyAppVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_SwiftyCampRoomyAppVersionString[];
 
